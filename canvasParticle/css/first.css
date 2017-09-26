@@ -1,0 +1,121 @@
+@media all and (min-width:1024px){
+    html,body{font-size: 16px;}
+    .indexBtn{
+        transform: scale(1) translate(-50% ,-50%);
+        -webkit-transform: scale(1) translate(-50% ,-50%);
+        -ms-transform: scale(1) translate(-50% ,-50%);
+    }
+}
+@media all and (max-width:1024px) and (min-width:600px){
+    html,body{font-size: 14px; }
+    .indexBtn{
+        transform: scale(0.9) translate(-50% ,-50%);
+        -webkit-transform: scale(0.9) translate(-50% ,-50%);
+        -ms-transform: scale(0.9) translate(-50% ,-50%);
+    }
+}
+@media all and (max-width:600px) {
+    html,body{font-size: 10px; }
+    .indexBtn{
+        transform: scale(0.8) translate(-50% ,-50%);
+        -webkit-transform: scale(0.8) translate(-50% ,-50%);
+        -ms-transform: scale(0.8) translate(-50% ,-50%);
+    }
+}
+
+html,
+body {
+    font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.container ,#bg{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+}
+.container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.text {
+    font-weight: 100;
+    font-size: 2em;
+    color: #fafafa;
+}
+.dud {
+    color: #757575;
+}
+#bg {
+    background: #212121;
+}
+.indexBtn,.messageBtn{
+    background-color: rgba(255, 255, 255, 0.1);
+    border:  1px solid #fff;
+    color: #fff; 
+    text-decoration: none;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.indexBtn{
+    position: absolute;
+    top:80%;
+    left:50%; 
+    width: 200px;
+    height: 80px;
+    line-height: 80px;  
+    font-size:1.5em;
+}
+.indexBtn:hover,.messageBtn:hover{
+    color: #345;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.messageBtn{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    line-height: 30px;
+    font-size:1.1em;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.message{
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    transform: translate(-40%,82%);
+    -ms-transform: translate(-40%,82%);
+    -webkit-transform: translate(-40%,82%);
+    width: 300px;
+    height:0;
+    background-color: rgba(255, 255, 255,0.8);
+    opacity:0;
+    transition: all 1s;
+}
+.message p{
+    height: 0;
+    line-height: 25px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:0.8em;
+    color: #000;
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+}
