@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+.p-box{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* transition: all .3s; */
+}
+.p-box img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.p-box p{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,70%);
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+.p-box p:hover{
+    transform: translate(-50%,-30%);
+}
