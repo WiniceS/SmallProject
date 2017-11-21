@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>见缝插针</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+        }
+
+        #start {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            margin: 50px auto;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        #start p {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        #menban {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:100%;
+        }
+        #menban canvas{
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+
+<body style="position:relative;">
+    <div id="container">
+        <div id="start">
+            <p>第<span id="level">1</span>关</p>
+            <p>开始</p>
+        </div>
+    </div>
+    <div id="menban">
+        <canvas id="game" width="300" height="600" ></canvas>
+    </div>
+    <script src="./jfcz.js"></script>
+    <script>
+        var startButton = document.getElementById('start')
+        var level = document.getElementById('level')
+        startButton.onclick = function () {
+            menban.style.display = "block"
+            gameStart(defaultOption[level.innerText - 1])
+        }
+    </script>
+</body>
+
+</html>
