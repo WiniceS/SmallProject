@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2048</title>
+    <script src="./jquery-3.2.1.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game"></div>
+    <div id="explain">
+        <p>控制方式：</p>
+        <p>1.可以使用上下左右键进行控制</p>
+        <p>2.可以使用鼠标进行控制，控制方法：按下鼠标后拖动一段距离后松开</p>
+    </div>
+    <script src="./new2048.js"></script>
+    <script>
+        $(window).ready(function () {
+            start_game({
+                el: $('#game')
+            });
+        })
+    </script>
+</body>
+
+</html>
